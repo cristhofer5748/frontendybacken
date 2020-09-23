@@ -1,0 +1,30 @@
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formulario{
+    background: rgba(0, 0, 0,.1);
+    background-image: url(../img/foto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 300px;
+    padding: 0px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,.568)  ;
+}
+
+
+#boton{
+    font-family: 'Rowdies', cursive;
+
+ margin: 20px auto;
+ width: 400px;
+text-align: center;
+padding: 10px;
+}
+
+h1{
+    font-family: 'Rowdies', cursive;
+}

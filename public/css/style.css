@@ -1,0 +1,91 @@
+
+h1#titulo1{
+    color: white;
+    text-align: center;
+    font-family: 'Ranchers';
+    margin: 0;
+    padding: 0;
+    
+}
+h1#titulo2{
+    text-align: center;
+    font-family: 'Ranchers';
+    margin: auto;
+    padding: 0;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0,.568)  ;
+}
+
+div#video{
+text-align: center;
+}
+body{
+    
+    background-image: url("../img/fondo.jpg");
+    background-color: mediumseagreen;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+   
+}
+img{
+   width: 800 px;
+   height:500px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    font-family: 'Ranchers';
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: green;
+}
+.active {
+    background-color: #4CAF50;
+}
+div#tabla{
+background-color: brown;
+border: black 10px solid;
+width: 800px;
+height: 540px;
+padding: 24px;
+margin: 2rem auto;
+
+}
+
+
+div#tabla>div{
+background-color: cornsilk;
+background-image: url(../img/carta.png);
+background-size: cover;
+border: black 1px solid;
+width: 71px;
+height: 71px;
+float: left;
+margin: 10px;
+padding: 20px;
+font-size: 60px;
+font-weight: bold;
+cursor: pointer;
+text-align: center;
+
+}

@@ -1,0 +1,99 @@
+
+#form{
+    width: 600px;
+    min-height: 300;
+    opacity: 0.95;
+   position: relative;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    background-color: white;
+    margin-bottom: 100px;
+    
+    
+   
+}
+
+
+.form-check-input{
+    margin: 8px auto;
+}
+#form select{
+    margin: 8px auto;
+
+}
+#form label{
+   font-family: 'Rowdies', cursive;
+   margin: 2px;
+   padding: 1px;
+}
+
+#titulo{
+color: white;
+text-align: center;
+margin-top: 30px;
+font-family: 'Rowdies', cursive;
+background-color: teal;
+border: 2px solid white;
+}
+
+.boton{
+    background-color:#1CBE9F;
+ margin: 20px auto;
+
+}
+body{
+    background-image: url("../img/fondo.jpg");
+    background-color: mediumseagreen;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#main{
+    width: auto;
+    height: auto;
+   display: inline-flexbox;
+
+}
+#right{
+    background-color: whitesmoke;
+    opacity: 0.95;
+    text-align: center;
+    float: center;
+}
+#left{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+    #usuarioTabla{
+        width: auto;
+    }
+#video{
+
+    text-align: right;
+    position: relative;
+   margin: auto auto auto auto;
+    float: right;
+}
+#ajax{
+
+    margin-bottom: 100px;
+    position: relative;
+}
+h1{
+    background-color: whitesmoke;
+    text-align: center;
+    font-family:  'Rowdies', cursive;
+}
+h1#cabecera{
+    font-family: 'Rowdies', cursive;
+background-color: teal;
+color: white;
+border: 2px solid white;
+}

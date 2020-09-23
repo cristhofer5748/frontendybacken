@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Nodejs</title>
+    <link href="https://unpkg.com/ed-grid@3.0.0/src/css/ed-grid.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      #form1{
+    float: left;
+    }
+    #form2{
+    float: right;
+    }
+    </style>
+</head>
+<body>
+  <div class="form-group mx-sm-4 pt-5">
+    <a href="../index.html"><input  id="boton" type="button" class="btn btn-primary btn-lg btn-block" value="Regresar"></a>   
+     </div>
+        <div class="rows-gap ed-grid s-grid-1 m-grid-1 lg-grid-1 xl-grid-1">
+            <div class="container">
+              <div id="act" class="card s-cross-center s-main-center">
+                
+                <h1 >Fomrulario 1 Empleados Permanentes</h1>
+                <div class="form-group">
+                  <label >ID</label>
+                  <input type="text" class="form-control" id="id" placeholder="Solo se ingresa para actualizar" >
+                  </div>
+                <div class="card-body ">
+                <form id="formulario"  class="card-body rows-gap ed-grid s-grid-2 m-grid-2 ">
+                  <div id="form1" class="col-md-6 rows-gap ed-grid s-grid-1 m-grid-1 lg-grid-1 xl-grid-1">
+                   
+                      <div class="form-group">
+                        <label >DPI</label>
+                        <input type="number" class="form-control" id="dpi" >
+                        </div>
+                      <div class="form-group">
+                        <label>Primer Nombre</label>
+                        <input type="text" class="form-control" id="primernom">
+                      </div>
+                      <div class="form-group">
+                        <label>Primer Apellido</label>
+                        <input type="text" class="form-control" id="primerap">
+                      </div>
+                      <div class="form-group">
+                        <label>Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" id="fechana">
+                      </div>
+                      <div class="form-group">
+                        <label>Puesto Nominal</label>
+                        <input type="text" class="form-control" id="puestonom">
+                      </div>
+                      <div class="form-group">
+                        <label>Departamento, área, unidad, sección o
+                          subsede donde labora</label>
+                      </div>
+                      <div class="form-group">
+                        <label>Email Institucional</label>
+                        <input type="email" class="form-control" id="emailins">
+                      </div>
+                      <div class="form-group">
+                        <label>No.Telefono Casa</label>
+                        <input type="number" class="form-control" id="telcasa">
+                      </div>
+                
+                  </div>
+                  
+                  <div id="form2" class="col-md-6 rows-gap ed-grid s-grid-1 m-grid-1 lg-grid-1 xl-grid-1">
+                  
+                      <div class="form-group">
+                        <label>NIP</label>
+                        <input type="number" class="form-control" id="nip">
+                      </div>
+                      <div class="form-group">
+                        <label>Segundo Nombre</label>
+                        <input type="text" class="form-control" id="segundonom">
+                      </div>
+                      <div class="form-group">
+                        <label>Segundo Apellido</label>
+                        <input type="text" class="form-control" id="segunap">
+                      </div>
+                      <div class="form-group">
+                        <label>Apellido de Casada</label>
+                        <input type="text" class="form-control" id="apellidocasa">
+                      </div>
+                      <div class="form-group">
+                        <label>Puesto Funcional</label>
+                        <input type="text" class="form-control" id="puestofun">
+                      </div>
+                      <div class="form-group ">
+                        <input type="text" class="form-control" id="departamento">
+                      </div>
+                      <div class="form-group">
+                        <label>Email Personal</label>
+                        <input type="email" class="form-control" id="emailper">
+                      </div>
+                      <div class="form-group">
+                        <label>No.Telefono Celular</label>
+                        <input type="number" class="form-control" id="telcelular">
+                      </div>
+                                      
+                  </div> 
+                 
+                </form>  
+                <button id="guardar" class="btn btn-info w-100" value="hola" >Guardar</button>             
+                <button id="actualizar" class="btn btn-info w-100" value="" >Actualizar</button>              
+                
+              </div>
+               
+              </div>
+            </div>
+            <div class="container">
+                <table class="table table-bordered table-hover table-dark table-responsive">
+                    <thead>
+                      <tr>
+                        <th>OPERACIONES</th>
+                        <th>DPI</th>
+                        <th>NIP</th>
+                        <th>Primer
+                          nombre</th>
+                        <th>Segundo
+                          Nombre</th>
+                        <th>Primer
+                          apellido</th>
+                        <th>Segundo
+                          apellido</th>
+                        <th>Fecha de
+                          nacimiento</th>
+                        <th>Apellido de
+                          Casada</th>
+                        <th>Puesto
+                          nominal</th>
+                        <th>Puesto
+                          Funciona</th>
+                        <th>Email
+                          institucional</th>
+                        <th>Email
+                          personal</th>
+                        <th> teléfono
+                          casa</th>
+                        <th>teléfono
+                          celular</th>
+                        
+                      </tr>
+                      
+                    </thead>
+                    <tbody id="bodytable">
+                        
+                    </tbody>
+
+                </table>
+            </div>
+         </div>
+         <script type="text/javascript" src="../scrips/crud.js"></script>
+ </body>
+</html>
